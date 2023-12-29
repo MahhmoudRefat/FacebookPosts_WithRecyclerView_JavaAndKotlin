@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FacebookPosts_WithRecyclerView_JavaAndKotlin</string>
+    <string name="email_or_phone_number">Email or Phone number</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up_for_facebook">Sign Up for Facebook</string>
+    <string name="help_center">Help Center</string>
+    <string name="unblast">Unblast</string>
+    <string name="_2_hrs">2</string>
+    <string name="buckle_up_because_change_is_coming_to_wordpress">Buckle up , because change is coming to WordPress</string>
+    <string name="http_unblast_com_color_schemes">http://unblast.com/color-schemes</string>
+    <string name="_12">12</string>
+    <string name="_1_share">Share</string>
+    <string name="share">Share</string>
+    <string name="comment">Comment</string>
+    <string name="like">Like</string>
+    <string name="hrs">hrs.</string>
+</resources>
