@@ -19,6 +19,7 @@ public class postsRecyclerAdapter extends RecyclerView.Adapter<postsRecyclerAdap
         this.items = items;
     }
     class ViewHolder extends RecyclerView.ViewHolder {
+        //calling
         TextView account_name;
         TextView hours_counter;
         TextView post_text;
@@ -48,12 +49,13 @@ public class postsRecyclerAdapter extends RecyclerView.Adapter<postsRecyclerAdap
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         Log.e("viewHolder","creating viewHolder ") ;
-        View itemview = LayoutInflater.from(parent.getContext()).inflate(R.layout.post_item, parent, false);
+        View itemview = LayoutInflater.from(parent.getContext()).inflate(R.layout.post_item, parent, false); //impleicity type inference
         return new ViewHolder(itemview);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        //creation
         Log.e("viewHolder","Binding data  to item number " + position) ;
         PostData item = items.get(position);
         holder.account_name.setText(item.account_name);

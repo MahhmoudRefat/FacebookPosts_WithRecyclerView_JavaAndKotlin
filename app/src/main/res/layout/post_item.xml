@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp"
-    >
+    android:padding="8dp">
+
     <androidx.cardview.widget.CardView
         android:id="@+id/profile_image"
         android:layout_width="60dp"
@@ -15,120 +15,120 @@
         app:cardCornerRadius="40dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
             android:src="@drawable/avatar_profile2" />
     </androidx.cardview.widget.CardView>
+
     <TextView
         android:id="@+id/acount_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/unblast"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@id/profile_image"
         app:layout_constraintTop_toTopOf="@id/profile_image"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginStart="10dp"
-        />
+        tools:text="@string/unblast" />
     <TextView
         android:id="@+id/post_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/_2_hrs"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toRightOf="@id/profile_image"
-        app:layout_constraintBottom_toBottomOf="@id/profile_image"
         android:layout_marginStart="10dp"
-        />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/profile_image"
+        app:layout_constraintLeft_toRightOf="@id/profile_image"
+        tools:text="@string/_2_hrs" />
+
     <TextView
         android:id="@+id/post_date_hrs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
         android:text="@string/hrs"
         android:textSize="20sp"
-        app:layout_constraintLeft_toRightOf="@id/post_date"
         app:layout_constraintBottom_toBottomOf="@id/post_date"
-        android:layout_marginStart="2dp"
-        />
+        app:layout_constraintLeft_toRightOf="@id/post_date" />
 
     <ImageView
         android:layout_width="22dp"
         android:layout_height="22dp"
-        android:src="@drawable/internet_icon"
-        android:layout_marginStart="35dp"
-        app:layout_constraintLeft_toRightOf="@id/post_date"
+        android:layout_marginStart="5dp"
         android:layout_marginBottom="2dp"
+        android:src="@drawable/internet_icon"
         app:layout_constraintBottom_toBottomOf="@id/profile_image"
-        />
+        app:layout_constraintLeft_toRightOf="@id/post_date_hrs" />
+
     <ImageView
         android:id="@+id/more_icon"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        app:cardCornerRadius="40dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/more_tools"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        />
+        android:src="@drawable/more_tools"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/post_word"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/buckle_up_because_change_is_coming_to_wordpress"
-        android:textSize="15sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profile_image"
-        android:textStyle="bold"
-        android:textColor="@color/black"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        />
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_image"
+        tools:text="@string/buckle_up_because_change_is_coming_to_wordpress" />
+
     <TextView
         android:id="@+id/post_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/http_unblast_com_color_schemes"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/background_loginPage"
         android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/post_word"
-        android:textStyle="bold"
-        android:textColor="@color/background_loginPage"
-        android:layout_marginStart="10dp"
-        />
+        tools:text="@string/http_unblast_com_color_schemes" />
+
     <ImageView
         android:id="@+id/post_image"
         android:layout_width="0dp"
         android:layout_height="260dp"
-        tools:src="@drawable/imagepost3"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/post_link"
-        android:scaleType="fitXY"
-        android:layout_marginTop="10dp"
-        />
+        tools:src="@drawable/imagepost3" />
+
     <ImageView
         android:id="@+id/like_icon"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/like_fb_icon"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/like_fb_icon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/post_image"
-        />
+        app:layout_constraintTop_toBottomOf="@id/post_image" />
+
     <TextView
         android:id="@+id/like_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/_12"
         android:textSize="20sp"
-        app:layout_constraintLeft_toRightOf="@id/like_icon"
-        app:layout_constraintBottom_toBottomOf="@id/like_icon"
         android:textStyle="bold"
-        />
+        app:layout_constraintBottom_toBottomOf="@id/like_icon"
+        app:layout_constraintLeft_toRightOf="@id/like_icon"
+        tools:text="@string/_12" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/mini_profile"
         android:layout_width="30dp"
@@ -143,74 +143,77 @@
             android:scaleType="centerCrop"
             android:src="@drawable/routename" />
     </androidx.cardview.widget.CardView>
+
     <TextView
         android:id="@+id/tv_share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/_1_share"
+        android:layout_marginEnd="10dp"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintRight_toLeftOf="@id/mini_profile"
         app:layout_constraintTop_toTopOf="@id/mini_profile"
-        android:textStyle="bold"
-        android:layout_marginEnd="10dp"
-        />
+        tools:text="@string/_1_share" />
+
     <TextView
         android:id="@+id/tv_share_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
         android:text="1"
         android:textSize="20sp"
-        app:layout_constraintRight_toLeftOf="@id/tv_share"
-        app:layout_constraintTop_toTopOf="@id/tv_share"
         android:textStyle="bold"
-        android:layout_marginEnd="3dp"
-        />
+        app:layout_constraintRight_toLeftOf="@id/tv_share"
+        app:layout_constraintTop_toTopOf="@id/tv_share" />
 
     <LinearLayout
         android:id="@+id/box"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mini_profile"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
-        >
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mini_profile">
+
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="30dp"
-            android:src="@drawable/likeicon"
-            />
+            android:layout_weight="1"
+            android:src="@drawable/likeicon" />
+
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/like"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="30dp"
-            android:src="@drawable/comment"/>
+            android:layout_weight="1"
+            android:src="@drawable/comment" />
+
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:text="@string/comment"
             android:textColor="@color/black"
             android:textSize="20sp" />
+
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="30dp"
-            android:src="@drawable/share_icon"/>
+            android:layout_weight="1"
+            android:src="@drawable/share_icon" />
+
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/share"
             android:textColor="@color/black"
             android:textSize="20sp" />
